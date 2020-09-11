@@ -1,0 +1,16 @@
+.blackDots {
+  list-style-type: none;
+  
+}
+
+ul.blackDots li.b1 {
+  display: inline;
+}
+
+ul.custom-inline li {
+  display: inline;
+}
+
+.multi {
+  column-count: 2;
+}
