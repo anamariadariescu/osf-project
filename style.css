@@ -1,9 +1,44 @@
-.blackDots {
-  list-style-type: none;
-  
+.products-sales {
+  list-style-type: none; 
 }
 
-ul.blackDots li.b1 {
+.logo {
+  margin-left: 3%;
+}
+
+.navbar-nav {
+  margin-left: 17%;
+}
+
+.nav-link {
+  padding-left: 50px !important;
+}
+
+.left-auto {
+  left: auto !important;
+}
+
+.dots {
+  list-style-type: none;
+}
+
+.h80 {
+  height: 86%;
+}
+
+.padding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.bigRow {
+  padding-top: 30px;
+}
+.services-title {
+  padding-left: 40px;
+}
+
+ul.products-sales li.b1 {
   display: inline;
 }
 
