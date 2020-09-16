@@ -73,4 +73,30 @@ ul.custom-inline li {
 .form-elegant .modal-body, .form-elegant .modal-footer {
   font-weight: 400; }
 
+ #Form-email1, #Form-pass1 {
+   border-radius: 50px;
+ }
+
+ .text-center {
+   width: 50%;
+   position: relative;
+   left: 24%;
+ }
+
+ .greenColor {
+   background-color: #84bc22;
+   border-radius: 50px;
+   margin-top: 30px;
+ }
+
+ .greenText {
+   color: #84bc22;
+   text-align: center;
+ }
+
+ .btn-rounded {
+   border-radius: 50px !important;
+   background-color: #84bc22;
+ }
+
   /* End - Modal login */
