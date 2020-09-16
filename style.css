@@ -73,9 +73,31 @@ ul.custom-inline li {
 .form-elegant .modal-body, .form-elegant .modal-footer {
   font-weight: 400; }
 
- #Form-email1, #Form-pass1 {
+ #form-email, #input-pwd {
    border-radius: 50px;
  }
+
+ .pass_show{position: relative} 
+
+ .pass_show .ptxt { 
+ 
+ position: absolute; 
+ 
+ top: 50%; 
+ 
+ right: 10px; 
+ 
+ z-index: 1; 
+ 
+margin-top: -10px; 
+ 
+ cursor: pointer; 
+ 
+ transition: .3s ease all; 
+ 
+ } 
+ 
+ .pass_show .ptxt:hover{color: #333333;} 
 
  .text-center {
    width: 50%;
