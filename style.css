@@ -249,4 +249,9 @@ margin-top: -10px;
     opacity: 1;
   }
 
+  .product-tile {
+    width: 75%;
+    border-radius: 10px;
+    position: relative;
+  }
   /* Hover Images */
