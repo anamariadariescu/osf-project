@@ -182,3 +182,71 @@ margin-top: -10px;
   .border-right {
     border-right: 5px solid grey;
   }
+
+  /* Hover Images */
+
+  /* .container {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+  } */
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+  
+  .hover-tile-product:hover .overlay {
+    display: block;
+    background: rgba(63, 212, 162, .8);
+  }
+  
+  /* img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+  } */
+  
+  
+  .hover-buttons {
+    position: absolute;
+    width: 220px;
+    left:0;
+    top: 120px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+    padding-left: 80px;
+  }
+
+  .plus, .heart {
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+  }
+
+  .heart {
+    margin-left: 20px;
+  }
+  
+  /* .button a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+  } */
+  
+  .hover-tile-product:hover .hover-buttons {
+    opacity: 1;
+  }
+
+  /* Hover Images */
