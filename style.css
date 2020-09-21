@@ -184,13 +184,6 @@ margin-top: -10px;
   }
 
   /* Hover Images */
-
-  /* .container {
-    position: relative;
-    margin-top: 50px;
-    width: 500px;
-    height: 300px;
-  } */
   
   .overlay {
     position: absolute;
@@ -206,13 +199,6 @@ margin-top: -10px;
     display: block;
     background: rgba(63, 212, 162, .8);
   }
-  
-  /* img {
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 0;
-  } */
   
   
   .hover-buttons {
@@ -236,14 +222,6 @@ margin-top: -10px;
     margin-left: 20px;
   }
   
-  /* .button a {
-    width: 200px;
-    padding: 12px 48px;
-    text-align: center;
-    color: white;
-    border: solid 2px white;
-    z-index: 1;
-  } */
   
   .hover-tile-product:hover .hover-buttons {
     opacity: 1;
@@ -254,4 +232,73 @@ margin-top: -10px;
     border-radius: 10px;
     position: relative;
   }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    width: 60%;
+  }
+
+  .gradient-tile {
+    background-image:
+    linear-gradient(to bottom, rgba(100, 83, 130, 0.52), rgba(201, 100, 138, 0.73)),
+    url('images/Layer_149.png');
+    height: 100%;
+  }
   /* Hover Images */
+
+  /* Load More button */
+
+  .padding-load-more {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  .load-more {
+    padding: 1% 8%;
+    border-radius: 20px;
+    border: 2px white solid;
+    background-color: #262a32;
+    color: white;
+  }
+
+  .reload {
+    position: absolute;
+    left: 55%;
+    bottom: 25%;
+  }
+
+   /* Load More button */
+
+  .container-img {
+    position: relative;
+  }
+
+  .centered {
+    position: absolute;
+    top: 35%;
+    left: 34%;
+    text-align: center;
+    color: white;
+  }
+
+  .banner-title {
+    font-size: 55px;
+    font-weight: bolder;
+  }
+
+  /* Featured products */
+
+  .color {
+    background-color: #262a32;
+  }
+
+  .content-featured-products {
+    color: white;
+  }
+
+  .title-featured-products {
+    padding-left: 5%;
+  }
