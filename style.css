@@ -183,6 +183,11 @@ margin-top: -10px;
     border-right: 5px solid grey;
   }
 
+  .product-tile-background {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+  }
+
   /* Hover Images */
   
   .overlay {
@@ -301,4 +306,32 @@ margin-top: -10px;
 
   .title-featured-products {
     padding-left: 5%;
+    padding-top: 10%;
   }
+
+  .your-class {
+    background-color: #262a32;
+    padding: 5% 0;
+  }
+
+  .prev1{
+      display: block;
+      height: 30px;
+      width: 30px;
+      background: url('images/icons/arrow_1.png') no-repeat;
+      float: right;
+    }
+
+  .next1{
+      display: block;
+      height: 30px;
+      width: 30px;
+      background: url('images/icons/arrow_2.png') no-repeat;
+    }
+  
+  .arrow-bullets {
+    list-style-type: none;
+    margin-bottom: 0;
+    background-color: #262a32;
+  }
+
