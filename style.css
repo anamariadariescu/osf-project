@@ -335,3 +335,21 @@ margin-top: -10px;
     background-color: #262a32;
   }
 
+  /* Featured products */
+
+  .benefits-content {
+    padding: 2% 5%;
+    background-color: #45413e;
+  }
+
+  .color-benefits-content {
+    color: white;
+  }
+
+  .center-img-benefits-content {
+    text-align: center;
+  }
+
+  .color-benefits-content p {
+    color: #686461;
+  }
