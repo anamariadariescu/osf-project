@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-        <div>
-            <div>
-              <p>Oops!</p>  
-            </div>
-            <div>
-                <h3>Sorry, this page could not be found!</h3> <br>
-                <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
-                   et magnis dis parturient montes, nascetur ridiculus mus. <br>
-                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-                   eget dolor. Aenean massa.
-                </p> <br> <br>
-                <p>Go back to Homepage</p> <br> <br>
-                <h3>Search our site</h3>
-            </div>
+<header>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous" />
+  </header>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col">
+            <p class="oops">Oops!</p>
         </div>
-    </body>
+        <div class="col margin-pageError">
+            <h3>Sorry, this page could not be found!</h3> <br>
+            <p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                et magnis dis parturient montes, nascetur ridiculus mus. <br> <br>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                eget dolor. Aenean massa.
+            </p> <br> <br>
+            <p style="color: #84bc22;">Go back to Homepage</p> <br> <br>
+            <h3>Search our site</h3>
+                <div class="row">
+                    <div class="span12">
+                        <form id="custom-search-form" class="form-search form-horizontal pull-right">
+                            <div class="input-append span12">
+                                <input type="text" class="search-query" placeholder="Search">
+                                <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+
 </html>
