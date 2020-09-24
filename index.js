@@ -8,7 +8,10 @@ $(document).ready(function(){
         prevArrow: $('.prev1'),
         nextArrow: $('.next1')
       });
-    
+
+        $(".year").html("<i class='fa fa-copyright'></i>" + " Copyright " + new Date().getFullYear());
+        console.log(new Date().getFullYear());
+
     });
       
     
@@ -17,5 +20,6 @@ $(document).ready(function(){
     $(this).prev().attr('type', function(index, attr){return attr == 'password' ? 'text' : 'password'; }); 
     
     });  
+
 
 

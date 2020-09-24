@@ -14,6 +14,11 @@
   padding-left: 50px !important;
 }
 
+.heart-cart i {
+  color: #686461;
+  text-decoration: none;
+}
+
 .left-auto {
   left: auto !important;
 }
@@ -36,6 +41,7 @@
 }
 .services-title {
   padding-left: 40px;
+  color: white;
 }
 
 ul.products-sales li.b1 {
@@ -156,6 +162,15 @@ margin-top: -10px;
   .linkColor a:link {
     color: black;
     text-decoration: none;
+  }
+
+  .linkColor li a {
+    color: #686461;
+    text-decoration: none;
+  }
+
+  .dropdown-menu-color {
+    background-color: #262a32 !important;
   }
 
   .centerLink {
@@ -352,4 +367,57 @@ margin-top: -10px;
 
   .color-benefits-content p {
     color: #686461;
+  }
+
+  /* Footer */
+
+  .footer-title {
+    color: black;
+    font-weight: bold;
+    padding-left: 40px;
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-icons-padding {
+    padding: 8% 5%;
+  }
+
+  .footer-icons-padding a {
+    color: #686461;
+    text-decoration: none; 
+  }
+
+  .year {
+    margin: 0;
+  }
+
+  .footer-margin {
+    margin: 0;
+  }
+
+  .footer-padding {
+    padding-top: 8%;
+    padding-left: 19%;
+  }
+
+  .footer-email {
+    color: black;
+    text-decoration: none; 
+  }
+
+  .footer-number {
+    color: black;
+    text-decoration: none; 
+  }
+
+  .footer-categoriest li {
+    padding-bottom: 12px;
+  }
+
+  .footer-about li {
+    padding-bottom: 12px;
   }
