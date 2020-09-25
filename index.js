@@ -30,7 +30,6 @@ $(document).ready(function(){
       var $incrementNumber = $(".cart-increment");
       var a = $incrementNumber.text();
       a++;
-      console.log(a);
       $incrementNumber.html("<p class='paragraph-cart'>" + a + "</p>");
     }
 
@@ -58,3 +57,35 @@ $(document).ready(function(){
       // End Buttons: add to cart, plus, heart 
 
 
+      $(function() {  
+        $('.load-more').click(function() {
+             $.ajax({
+             url: 'products.json',
+             dataType: 'json',
+             success: function(data) {
+                var items = [];
+              
+                $.each(data['products'], function(key, val) {
+                  console.log(key);
+                  console.log(val);
+      
+                  // items.push("<div class='col'><div class='center hover-tile-product product-tile'><img class='w-100' src='" + val['image'] +"'><div class='centerLink center product-tile-background'><a href='productsDescription.html' class='featured-products-description'>" + val['name'] + "<br>" + val['price'] + "</a></div><div class='overlay'></div><div class='row hover-buttons'><div class='col plus'></div><div class='col-heart'></div></div></div></div>");    
+                  items.push("<div class='col'><div class='center hover-tile-product product-tile'><img class='w-100' src='" + val['image'] +"'><div class='centerLink center product-tile-background'><a href='productsDescription.html' class='featured-products-description'>" + val['name'] + "<br>" + "$ " + val['price'] + "</a></div><div class='overlay'></div><div class='row hover-buttons'><div class='col plus'><a href='#'><i class='fa fa-plus'></i></a></div><div class='col heart'><a href='#'><i class='fa fa-heart'></i></a></div></div></div></div>");    
+      
+                });
+
+                  $(".backgroundItemsProduct").append("<br><br><br><div class='row linkColor'>" + items + "</div>");
+                // $('<ul/>', {
+                //    'class': 'interest-list',
+                //    html: items.join('')
+                // }).appendTo('body');
+      
+             },
+            statusCode: {
+               404: function() {
+                 alert('There was a problem with the server.  Try again soon!');
+               }
+             }
+          });
+        });
+      });
