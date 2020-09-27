@@ -9,11 +9,33 @@ $(document).ready(function(){
         nextArrow: $('.next1')
       });
 
-        $(".year").html("<i class='fa fa-copyright'></i>" + " Copyright " + new Date().getFullYear());
-        console.log(new Date().getFullYear());
+    $(".year").html("<i class='fa fa-copyright'></i>" + " Copyright " + new Date().getFullYear());
 
-        $(".cart-increment").hide();
-        $(".heart-increment").hide();
+    $(".cart-increment").hide();
+    $(".heart-increment").hide();
+
+    $('#lightSlider').lightSlider({
+      gallery: true,
+      item: 1,
+      // loop: true,
+      slideMargin: 0,
+      thumbItem: 4,
+      controls: false,
+      vertical:true,
+      verticalHeight: 350,
+      // verticalWidth: 1000, 
+      vThumbWidth: 300,
+      thumbMargin: 20,
+      adaptiveHeight: true,
+      responsive: [
+        {
+            breakpoint: 300,
+            item: 3
+        }
+    ]
+      // vThumbHeight:100,
+    });
+
     });
       
     
