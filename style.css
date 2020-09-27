@@ -10,6 +10,11 @@
   margin-left: 10%;
 }
 
+.navbar-nav li a {
+  color: #686461;
+  text-decoration: none;
+}
+
 .nav-link {
   padding-left: 50px !important;
 }
@@ -193,6 +198,11 @@ margin-top: -10px;
     padding: 10%;
   }
 
+  .centerLink a {
+    color: #686461;
+    text-decoration: none;
+  }
+
   .centerPrice {
     text-align: center;
     margin-top: 3%;
@@ -214,6 +224,11 @@ margin-top: -10px;
   .product-tile-background {
     background-color: white;
     border-radius: 0 0 10px 10px;
+  }
+
+  .product-tile-background a {
+    color: #686461;
+    text-decoration: none;
   }
 
   /* Hover Images */
@@ -647,6 +662,9 @@ margin-top: -10px;
     color: white !important;
   }
   
+  #popularItems-product-description {
+    background-color: #f1edea;
+  }
 /** END TABS **/
   
   
