@@ -124,19 +124,19 @@
         </li>
         <li class="nav-item position-static">
           <div style="position: relative;">
-          <div class="heart-increment"></div>
-          <a class="nav-link heart-cart">
-            <i class="fa fa-2x fa-heart"></i>
-          </a>
-        </div>
+            <div class="heart-increment"></div>
+            <a class="nav-link heart-cart">
+              <i class="fa fa-2x fa-heart"></i>
+            </a>
+          </div>
         </li>
         <li class="nav-item position-static">
           <div style="position: relative;">
-          <div class="cart-increment"></div>
-          <a class="nav-link heart-cart">
-            <i class="fa fa-2x fa-shopping-cart"></i>
-          </a>
-        </div>
+            <div class="cart-increment"></div>
+            <a class="nav-link heart-cart">
+              <i class="fa fa-2x fa-shopping-cart"></i>
+            </a>
+          </div>
         </li>
       </ul>
     </div>
@@ -189,8 +189,9 @@
   <!-- Modal -->
   <div class="row">
     <div class="col-9">
-      <div id="carouselExampleIndicators" class="carousel slide padding-carousel" data-ride="carousel">
-        <ol class="carousel-indicators">
+      <div id="carouselExampleIndicators" class="carousel slide padding-carousel" data-ride="carousel"
+        data-interval="false">
+        <ol class="carousel-indicators" id="carousel-round-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -198,28 +199,66 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="images/Layer_3.png" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-              <img src="images/Control_and_manage_any_device_with_cloud_solutions.png">
-              <p>...</p>
+            <div class="carousel-caption d-none d-md-block" id="carousel-firstSlide">
+              <h1>Control and manage any device with cloud solutions</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-firstSlide-text">
+              <p>Improve business performance and the user experience with the right mix of IoT technology and processes
+              </p>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-firstSlide-button">
+              <a href="services.html" class="btn" style="color: white;">VIEW MORE</a>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/Layer_4.png" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block" id="carousel-secondSlide">
+              <h1>Control and manage any device with cloud solutions</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-secondSlide-text">
+              <p>Improve business performance and the user experience with the right mix of IoT technology and processes
+              </p>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-secondSlide-button">
+              <a href="services.html" class="btn" style="color: white;">VIEW MORE</a>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="images/Layer_5.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block" id="carousel-thirdSlide">
+              <h1>Control and manage any device with cloud solutions</h1>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-thirdSlide-text">
+              <p>Improve business performance and the user experience with the right mix of IoT technology and processes
+              </p>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-business-slide-1" id="carousel-thirdSlide-button">
+
+              <a href="services.html" class="btn" style="color: white;">VIEW MORE</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="col-3">
-      <div class="w-100 h-100 padding-img-navbar">
-        <div class="img-rightside-gradient"></div>
-        <!-- <img src="images/Layer_155.png" class="img-rightside"/> -->
+      <div class="padding-img-navbar" style="position:relative">
+        <!-- <div class="img-rightside-gradient"></div> -->
+        <img src="images/Layer_151.png" class="img-rightside" />
+        <div class="text-right-image" style="">
+          <h1 class="big-header">55%</h1>
+        </div>
+        <div class="text-right-image-2">
+          <p>SUMMER <br> SALES</p>
+        </div>
+      </div>
+      <div class="text-center" style="width:60%">
+        <p>Follow us on Facebook</p>
+        <p>Sed us perpicatis unde omnis iste natus error sit</p>
+        <button class="btn" id="btn-border">Facebook</button>
       </div>
     </div>
   </div>
-  
+
   <div class="headings">
     <span class="hr"></span>
     <h2 class="title" style="color: white;">Popular Items</h2>
@@ -227,125 +266,125 @@
   </div>
   <div class="backgroundItems">
     <div class="backgroundItemsProduct">
-    <div class="row linkColor">
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <div>
-            <img src="images/Layer_151.png" style="width: 100%">
-          </div>
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">Kristina Dam Oak Table With White Marble Top <br>$ 799.55</a>
-          </div>
-          <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+      <div class="row linkColor">
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <div>
+              <img src="images/Layer_151.png" style="width: 100%">
+            </div>
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">Kristina Dam Oak Table With White Marble Top <br>$ 799.55</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="center" style="width:75%; background-color:white; border-radius: 10px">
-          <div>
-            <img src="images/Layer_152.png" style="width: 100%">
-          </div>
-          <div class="centerLink center">
-            <a href="productDescription.html">Hay - About A Lounge<br> Chair AAL 93</a>
-            <div class="row border-popular-items">
-              <div class="col border-right">
-                <a href="productDescription.html" style="color: #41cb80;">$ 659.55</a>
+        <div class="col">
+          <div class="center" style="width:75%; background-color:white; border-radius: 10px">
+            <div>
+              <img src="images/Layer_152.png" style="width: 100%">
+            </div>
+            <div class="centerLink center">
+              <a href="productDescription.html">Hay - About A Lounge<br> Chair AAL 93</a>
+              <div class="row border-popular-items">
+                <div class="col border-right">
+                  <a href="productDescription.html" style="color: #41cb80;">$ 659.55</a>
+                </div>
+                <div class="col buyNow-button">
+                  <a href="#"><strong>BUY NOW</strong></a>
+                </div>
               </div>
-              <div class="col buyNow-button">
-                <a href="#"><strong>BUY NOW</strong></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <img src="images/Layer_1.png" style="width: 100%">
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">Activate Facial Mask and Charcoal Soap <br>$ 129.55</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <img src="images/Layer_154.png" style="width: 100%">
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">Cocktail Table Walnut<br>|YES <br>$ 299.99</a>
+            </div>
+            <!-- <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div> -->
+          </div>
+        </div>
+      </div> <br> <br> <br>
+      <div class="row linkColor">
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <img src="images/Layer_155.png" style="width: 100%">
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">Hay - About A Lounge Chair AAR 93 <br>$ 659.55</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <img src="images/Layer_156.png" style="width: 100%">
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">Tory Desk Calendar <br><br>$ 410.99</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center hover-tile-product product-tile">
+            <img src="images/Layer_157.png" style="width: 100%">
+            <div class="centerLink center product-tile-background">
+              <a href="productDescription.html">CH445 Wing Chair on SUITE NY <br>$ 330.55</a>
+            </div>
+            <div class="overlay"></div>
+            <div class="row hover-buttons">
+              <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
+              <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="center product-tile gradient-tile">
+            <div class="bottom-left">
+              <div style="margin-bottom: 20%;">
+                <img src="images/My_dragons_are__misbehaving_again._Unbelieveable!.png">
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <img src="images/Layer_150 (1).png">
+                </div>
+                <div class="col-9">
+                  <p>5H AGO</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <img src="images/Layer_1.png" style="width: 100%">
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">Activate Facial Mask and Charcoal Soap <br>$ 129.55</a>
-          </div>
-          <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <img src="images/Layer_154.png" style="width: 100%">
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">Cocktail Table Walnut<br>|YES <br>$ 299.99</a>
-          </div>
-          <!-- <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
-          </div> -->
-        </div>
-      </div>
-    </div> <br> <br> <br>
-    <div class="row linkColor">
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <img src="images/Layer_155.png" style="width: 100%">
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">Hay - About A Lounge Chair AAR 93 <br>$ 659.55</a>
-          </div>
-          <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <img src="images/Layer_156.png" style="width: 100%">
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">Tory Desk Calendar <br><br>$ 410.99</a>
-          </div>
-          <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="center hover-tile-product product-tile">
-          <img src="images/Layer_157.png" style="width: 100%">
-          <div class="centerLink center product-tile-background">
-            <a href="productDescription.html">CH445 Wing Chair on SUITE NY <br>$ 330.55</a>
-          </div>
-          <div class="overlay"></div>
-          <div class="row hover-buttons">
-            <div class="col plus"><a href="#"><i class="fa fa-plus"></i></a></div>
-            <div class="col heart"><a href="#"><i class="fa fa-heart"></i></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="center product-tile gradient-tile">
-          <div class="bottom-left">
-            <div style="margin-bottom: 20%;">
-              <img src="images/My_dragons_are__misbehaving_again._Unbelieveable!.png">
-            </div>
-            <div class="row">
-              <div class="col-3">
-                <img src="images/Layer_150 (1).png">
-              </div>
-              <div class="col-9">
-                <p>5H AGO</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
     <div class="row">
       <div class="col padding-load-more">
@@ -362,15 +401,19 @@
       </div>
     </div>
   </div>
-  <div class="row color">
-    <div class="center content-featured-products">
-      <h2 class="title-featured-products">Featured Products</h2>
-      <p>Unde omnis iste natus error sit voluptatem</p>
+  <div class="color">
+    <div class="row">
+      <div class="col" style="color:white">
+        <div class="text-center">
+          <h2>Featured Products</h2>
+          <p>Unde omnis iste natus error sit voluptatem</p>
+        </div>
+      </div>
     </div>
   </div>
   <div>
-    <div>
-      <ul class="row arrow-bullets" style="text-align: center;">
+    <div class="arrow-bullets">
+      <ul class="row" style="text-align: center; margin-bottom: 0">
         <li class="col-1">
           <div class="prev1">
           </div>
@@ -388,6 +431,7 @@
         </li>
       </ul>
     </div>
+    <!-- <div class="linkColor your-class"></div> -->
     <div class="row linkColor your-class">
       <div class="col">
         <div class="center hover-tile-product product-tile">
@@ -505,120 +549,123 @@
       </div>
     </div>
   </div>
-  
-  <div class="row benefits-content">
-    <div class="col">
-      <div class="row">
-        <div class="col-4 center-img-benefits-content">
-          <img src="images/icons/Delivery_Packages_On_A_Trolley._Attribute_as_Freepik_from_Flaticon.com.png">
-        </div>
-        <div class="col-8 color-benefits-content">
-          <h3>FOCUS</h3>
-          <p>Our unwavering focus on superior service delivery and building next generation competencies.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="row">
-        <div class="col-4 center-img-benefits-content">
-          <img src="images/icons/Triangular_Arrows_Sign_For_Recycle._Attribute_as_Freepik_from_Flaticon.com.png">
-        </div>
-        <div class="col-8 color-benefits-content">
-          <h3>METHOD</h3>
-          <p>A standardized mothodology designed to deliver measurable business results and predictable costs.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="row">
-        <div class="col-4 center-img-benefits-content">
-          <img src="images/icons/Clipboard_Verification_Symbol._Attribute_as_Freepik_from_Flaticon.com.png">
-        </div>
-        <div class="col-8 color-benefits-content">
-          <h3>KNOWLEDGE</h3>
-          <p>A highly skilled proactive workforce that reliably improves each client's ROI  while mitigating their business risk.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <div class="footer-padding">
-      <p class="year"></p>
-      <p>All Rights Reserved</p>
-      <p style="font-weight: bold;">CONTACT</p>
-      <p class="footer-margin">Headquarters:</p>
-      <p class="footer-margin">5600 Blvd. des Galeries, Bur 530</p>
-      <p class="footer-margin">Quebec, Quebec G2K 2H6</p> <br>
-      <a href="mailto:example@tutorialspark.com" class="footer-email">contact@osf-global.com </a> <br> <br>
-      <a href="tel:+1(888) 548-4344" class="footer-number">+1(888) 548-4344</a>
 
-    </div>
-    </div>
-    <div class="col-6">
-      <div class="row bigRow">
-        <div class="col padding">
-          <ul class="products-sales row">
-            <li class="col">
-              <p class="footer-title">CATEGORIEST</p>
-              <ul>
-                <div class="row">
-                  <div class="col dots linkColor footer-categoriest">
-                    <li><a href="404.html">Alcohol</a></li>
-                    <li><a href="404.html">Art</a></li>
-                    <li><a href="404.html">Books</a></li>
-                    <li><a href="404.html">Drink</a></li>
-                    <li><a href="404.html">Electronics</a></li>
-                  </div>
-                  <div class="col dots linkColor footer-categoriest">
-                    <li><a href="404.html">Home</a></li>
-                    <li><a href="404.html">Jewelry</a></li>
-                    <li><a href="404.html">Kids & Baby</a></li>
-                    <li><a href="404.html">Men's Fashion</a></li>
-                    <li><a href="404.html">Mobile</a></li>
-                    <li><a href="404.html">Motorcycles</a></li>
-                    <li><a href="404.html">Movies</a></li>
-                    <li><a href="404.html">Music</a></li>
-                  </div>
-                  <div class="col dots linkColor footer-categoriest">
-                    <li><a href="404.html">Sport</a></li>
-                    <li><a href="404.html">Toys</a></li>
-                    <li><a href="404.html">Travel</a></li>
-                    <li><a href="404.html">Women's Fashion</a></li>
-                  </div>
-                </div>
-              </ul>
-            </li>
-            <li class="col-3">
-              <p class="footer-title">ABOUT</p>
-              <ul class="dots linkColor footer-about">
-                <li><a href="404.html">About us</a></li>
-                <li><a href="404.html">Delivery</a></li>
-                <li><a href="404.html">Testimonials</a></li>
-                <li><a href="404.html">Contact</a></li>
-              </ul>
-            </li>
-          </ul>
+  <div class="benefits-content">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col-4 center-img-benefits-content">
+            <img src="images/icons/Delivery_Packages_On_A_Trolley._Attribute_as_Freepik_from_Flaticon.com.png">
+          </div>
+          <div class="col-8 color-benefits-content">
+            <h3>FOCUS</h3>
+            <p>Our unwavering focus on superior service delivery and building next generation competencies.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-3">
-      <div class="footer-icons">
-        <div class="footer-icons-padding">
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+      <div class="col">
+        <div class="row">
+          <div class="col-4 center-img-benefits-content">
+            <img src="images/icons/Triangular_Arrows_Sign_For_Recycle._Attribute_as_Freepik_from_Flaticon.com.png">
+          </div>
+          <div class="col-8 color-benefits-content">
+            <h3>METHOD</h3>
+            <p>A standardized mothodology designed to deliver measurable business results and predictable costs.</p>
+          </div>
         </div>
-        <div class="footer-icons-padding">
-          <a href="https://www.google.ro/"><i class="fa fa-google"></i></a>
-        </div>
-        <div class="footer-icons-padding">
-          <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
-        </div>
-        <div class="footer-icons-padding">
-          <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-4 center-img-benefits-content">
+            <img src="images/icons/Clipboard_Verification_Symbol._Attribute_as_Freepik_from_Flaticon.com.png">
+          </div>
+          <div class="col-8 color-benefits-content">
+            <h3>KNOWLEDGE</h3>
+            <p>A highly skilled proactive workforce that reliably improves each client's ROI while mitigating their
+              business risk.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="footer">
+    <div class="row">
+      <div class="col-3">
+        <div class="footer-padding">
+          <p class="year"></p>
+          <p>All Rights Reserved</p>
+          <p style="font-weight: bold;">CONTACT</p>
+          <p class="footer-margin">Headquarters:</p>
+          <p class="footer-margin">5600 Blvd. des Galeries, Bur 530</p>
+          <p class="footer-margin">Quebec, Quebec G2K 2H6</p> <br>
+          <a href="mailto:example@tutorialspark.com" class="footer-email">contact@osf-global.com </a> <br> <br>
+          <a href="tel:+1(888) 548-4344" class="footer-number">+1(888) 548-4344</a>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row bigRow">
+          <div class="col padding">
+            <ul class="products-sales row">
+              <li class="col">
+                <p class="footer-title">CATEGORIEST</p>
+                <ul>
+                  <div class="row">
+                    <div class="col dots linkColor footer-categoriest">
+                      <li><a href="404.html">Alcohol</a></li>
+                      <li><a href="404.html">Art</a></li>
+                      <li><a href="404.html">Books</a></li>
+                      <li><a href="404.html">Drink</a></li>
+                      <li><a href="404.html">Electronics</a></li>
+                    </div>
+                    <div class="col dots linkColor footer-categoriest">
+                      <li><a href="404.html">Home</a></li>
+                      <li><a href="404.html">Jewelry</a></li>
+                      <li><a href="404.html">Kids & Baby</a></li>
+                      <li><a href="404.html">Men's Fashion</a></li>
+                      <li><a href="404.html">Mobile</a></li>
+                      <li><a href="404.html">Motorcycles</a></li>
+                      <li><a href="404.html">Movies</a></li>
+                      <li><a href="404.html">Music</a></li>
+                    </div>
+                    <div class="col dots linkColor footer-categoriest">
+                      <li><a href="404.html">Sport</a></li>
+                      <li><a href="404.html">Toys</a></li>
+                      <li><a href="404.html">Travel</a></li>
+                      <li><a href="404.html">Women's Fashion</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="col-3">
+                <p class="footer-title">ABOUT</p>
+                <ul class="dots linkColor footer-about">
+                  <li><a href="404.html">About us</a></li>
+                  <li><a href="404.html">Delivery</a></li>
+                  <li><a href="404.html">Testimonials</a></li>
+                  <li><a href="404.html">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="footer-icons">
+          <div class="footer-icons-padding">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+          </div>
+          <div class="footer-icons-padding">
+            <a href="https://www.google.ro/"><i class="fa fa-google"></i></a>
+          </div>
+          <div class="footer-icons-padding">
+            <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="footer-icons-padding">
+            <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
