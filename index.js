@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('.pass_show').append('<span toggle="#input-pwd" class="ptxt fa fa-fw fa-eye field-icon toggle-password"></span>');
-  $('.your-class').slick({
+  $('.your-class > .row').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
@@ -13,9 +13,31 @@ $(document).ready(function () {
 
   $(".cart-increment").hide();
   $(".heart-increment").hide();
+
+/** Read more */
+readMore();
+
 });
 
+function readMore() {
+  $('#readMore').click(function(e) {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("readMore");
+    
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }); 
+}
 
+// Password
 $(document).on('click', '.pass_show .ptxt', function () {
 
   $(this).prev().attr('type', function (index, attr) { return attr == 'password' ? 'text' : 'password'; });
@@ -67,6 +89,7 @@ $(".heart").click(function (e) {
 // End Buttons: add to cart, plus, heart 
 
 
+// Load more
 $(function () {
   $('.load-more').click(function () {
     $.ajax({

@@ -523,6 +523,23 @@ margin-top: -10px;
     background-color: #262a32;
   }
 
+  .pt-50 {
+    padding-top: 50px;
+  }
+
+  .pb-50 {
+    padding-bottom: 50px;
+  }
+
+  .containerNew {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #more {display: none;}
+
   .content-featured-products {
     color: white;
   }
@@ -850,4 +867,33 @@ margin-top: -10px;
     text-align: center; 
 }
   
-  
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+   .padding-carousel {
+    padding: 0;
+  }
+
+  .carousel-indicators {
+    padding-bottom: 0;
+  }
+
+  .font-size-20 {
+    font-size: 20px;
+  }
+
+  .h-350 {
+    height: 350px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    text-align: center;
+    color: white;
+  }
+
+  .margin-bottom-0 {
+    margin-bottom: 0;
+  }
+}
