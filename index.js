@@ -63,7 +63,7 @@ $(".buyNow-button").click(function (e) {
   cart();
 })
 
-$(".plus").click(function (e) {
+$(".col .plus").click(function (e) {
   e.preventDefault();
   cart();
 })

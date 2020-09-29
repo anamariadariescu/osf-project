@@ -2,6 +2,7 @@
 <html>
 <header>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <title>osfAcademy</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -16,7 +17,7 @@
 </header>
 
 <body>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-light bg-light navbar-expand-lg navbar-expand-sm">
     <img src="images/logo.png" class="logo">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +34,7 @@
             <div class="row bigRow">
               <div class="col-9 padding">
                 <ul class="products-sales row">
-                  <li class="col-9">
+                  <li class="col-lg-9">
                     <p class="services-title">PRODUCT CATEGORIESC</p>
                     <ul>
                       <div class="row">
@@ -70,7 +71,7 @@
                       </div>
                     </ul>
                   </li>
-                  <li class="col-3">
+                  <li class="col-lg-3">
                     <p class="services-title">SALES</p>
                     <ul class="dots linkColor">
                       <li><a href="404.html">Accesories</a></li>
@@ -85,7 +86,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-3 d-none d-md-block">
                 <img src="images/Layer_162.png" class="rounded mx-auto d-block h80">
               </div>
             </div>
@@ -118,18 +119,18 @@
             <a class="dropdown-item" href="#">€ EUR</a>
           </div>
         </li>
-        <li class="nav-item position-static">
+        <li class="nav-item position-static d-none d-md-block">
           <a class="nav-link"><img
               src="images/icons/Search_Information._Attribute_as_Designmodo_from_Flaticon.com.png"></a>
         </li>
-        <li class="nav-item position-static">
+        <li class="nav-item position-static d-none d-md-block">
           <a class="nav-link" data-toggle="modal" data-target="#elegantModalForm"><img
               src="images/icons/Profile_User_Outline._Attribute_as_Situ_Herrera_from_Flaticon.com.png"></a>
         </li>
-        <li class="nav-item position-static">
+        <li class="nav-item position-static d-none d-md-block">
           <div style="position: relative;">
             <div class="heart-increment"></div>
-            <a class="nav-link heart-cart">
+            <a class="nav-link heart-cart d-none d-md-block">
               <i class="fa fa-2x fa-heart"></i>
             </a>
           </div>
@@ -137,7 +138,7 @@
         <li class="nav-item position-static">
           <div style="position: relative;">
             <div class="cart-increment"></div>
-            <a class="nav-link heart-cart">
+            <a class="nav-link heart-cart d-none d-md-block">
               <i class="fa fa-2x fa-shopping-cart"></i>
             </a>
           </div>
@@ -200,53 +201,72 @@
     </div>
 
     <div class="form-services">
-      <form class="form-inline" action="/action_page.php">
-
-        <div class="form-group">
-          <label for="select1">Price</label>
-          <select class="form-control" id="select1" style="border-radius: 20px;width: 200px;">
-            <option>$0.00 - $100.00</option>
-          </select>
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="select1">Price</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="select1" style="border-radius: 20px;">
+                <option>$0.00 - $100.00</option>
+              </select>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label" for="select2">Brands</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="select2" style="border-radius: 20px;">
+                  <option>Ukraine sport</option>
+                </select>
+              </div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label" for="select3">Size</label>
+              <div class="col-sm-10">
+                <select class="form-control" id="select3" style="border-radius: 20px;">
+                  <option>Small</option>
+                </select>
+              </div>
+          </div>
+          </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label" for="select3">Color</label>
+          <div class="col-sm-10">
+            <button type="button" class="btn btn-light btn-circle btn-sm"></button>
+            <button type="button" class="btn btn-primary btn-circle btn-sm"></button>
+            <button type="button" class="btn btn-dark btn-circle btn-sm"></button>
+            <button type="button" class="btn btn-success btn-circle btn-sm"></button>
+            <button type="button" class="btn btn-warning btn-circle btn-sm"></button>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label" for="select1">Sort</label>
+          <div class="col-sm-10">
+            <select class="form-control" id="select1" style="border-radius: 20px;">
+              <option>Price</option>
+            </select>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="select2">Brands</label>
-          <select class="form-control" id="select2" style="border-radius: 20px;width: 200px;">
-            <option>Ukraine sport</option>
-          </select>
         </div>
-        <div class="form-group">
-          <label for="select3">Size</label>
-          <select class="form-control" id="select3" style="border-radius: 20px;width: 200px;">
-            <option>Small</option>
-          </select>
+        <div class="col-md-4 col-sm-12">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="select2">Show</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="select2" style="border-radius: 20px;">
+                <option>16 per page</option>
+              </select>
+            </div>
         </div>
-      </form>
-      <form class="form-inline" action="/action_page.php">
-
-        <div class="form-group">
-          <label for="select1">Price</label>
-          <button type="button" class="btn btn-light btn-circle btn-sm"></button>
-          <button type="button" class="btn btn-primary btn-circle btn-sm"></button>
-          <button type="button" class="btn btn-dark btn-circle btn-sm"></button>
-          <button type="button" class="btn btn-success btn-circle btn-sm"></button>
-          <button type="button" class="btn btn-warning btn-circle btn-sm"></button>
-          <!-- <select class="form-control" id="select1" style="border-radius: 20px;width: 200px;">
-                          <option>$0.00 - $100.00</option>
-                      </select> -->
         </div>
-        <div class="form-group">
-          <label for="select2">Sort by</label>
-          <select class="form-control" id="select2" style="border-radius: 20px;width: 200px;">
-            <option>Price</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="select2">Show</label>
-          <select class="form-control" id="select2" style="border-radius: 20px;width: 200px;">
-            <option>16 per page</option>
-          </select>
-        </div>
-      </form>
+  </div>
     </div>
 
     <div class="row">
@@ -255,8 +275,9 @@
       </div>
     </div>
 
+    <!-- <div class="d-none d-md-block"> -->
     <div class="row linkColor">
-      <div class="col">
+      <div class="col-lg-3 col-sm-12 mt-20">
         <div class="center hover-tile-product product-tile">
           <div>
             <img src="images/Layer_155.png" style="width: 100%">
@@ -271,7 +292,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-sm-12 mt-20">
         <div class="center hover-tile-product product-tile">
           <div>
             <img src="images/Layer_151.png" style="width: 100%">
@@ -286,7 +307,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-sm-12 mt-20">
         <div class="center hover-tile-product product-tile">
           <img src="images/Layer_154.png" style="width: 100%">
           <div class="centerLink center product-tile-background">
@@ -299,7 +320,7 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col-lg-3 col-sm-12 mt-20">
         <div class="center hover-tile-product product-tile">
           <img src="images/Layer_157.png" style="width: 100%">
           <div class="centerLink center product-tile-background">
@@ -313,6 +334,7 @@
         </div>
       </div>
     </div> <br> <br> <br>
+    <div class="d-none d-md-block">
     <div class="row linkColor">
       <div class="col">
         <div class="center hover-tile-product product-tile">
@@ -483,21 +505,28 @@
         </div>
       </div>
     </div>
+    </div>
+
+
     <div class="row">
       <div class="col padding-load-more">
         <button class="center load-more" style="background-color: yellowgreen;">LOAD MORE</button>
       </div>
     </div>
 
-    <div class="row color">
-      <div class="center content-featured-products">
-        <h2 class="title-featured-products">Featured Products</h2>
-        <p>Unde omnis iste natus error sit voluptatem</p>
+    <div class="color pt-50 d-none d-md-block">
+      <div class="row">
+        <div class="col" style="color:white">
+          <div class="text-center">
+            <h2>Featured Products</h2>
+            <p>Unde omnis iste natus error sit voluptatem</p>
+          </div>
+        </div>
       </div>
     </div>
     <div>
-      <div>
-        <ul class="row arrow-bullets" style="text-align: center;">
+      <div class="arrow-bullets d-none d-md-block">
+        <ul class="row" style="text-align: center; margin-bottom: 0">
           <li class="col-1">
             <div class="prev1">
             </div>
@@ -515,15 +544,15 @@
           </li>
         </ul>
       </div>
-      <div class="row linkColor your-class">
+      <div class="linkColor your-class d-none d-md-block">
+      <div class="row">
         <div class="col">
           <div class="center hover-tile-product product-tile">
             <div>
               <img src="images/Layer_158.png" style="width: 100%">
             </div>
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Awesome</a>
             </div>
             <div class="overlay"></div>
@@ -537,8 +566,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_159.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Marketing</a>
             </div>
             <div class="overlay"></div>
@@ -552,8 +580,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_160.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Awesome</a>
             </div>
             <div class="overlay"></div>
@@ -567,8 +594,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_161.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Hezy Theme<br> <br>
-                Marketing</a>
+              <a href="productDescription.html" class="featured-products-description">Hezy Theme<br> <br> Marketing</a>
             </div>
             <div class="overlay"></div>
             <div class="row hover-buttons">
@@ -583,8 +609,7 @@
               <img src="images/Layer_158.png" style="width: 100%">
             </div>
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Awesome</a>
             </div>
             <div class="overlay"></div>
@@ -598,8 +623,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_159.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Marketing</a>
             </div>
             <div class="overlay"></div>
@@ -613,8 +637,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_160.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak
-                Table With White
+              <a href="productDescription.html" class="featured-products-description">Kristina Dam Oak Table With White
                 Marble <br>Awesome</a>
             </div>
             <div class="overlay"></div>
@@ -628,8 +651,7 @@
           <div class="center hover-tile-product product-tile">
             <img src="images/Layer_161.png" style="width: 100%">
             <div class="centerLink center product-tile-background">
-              <a href="productDescription.html" class="featured-products-description">Hezy Theme<br> <br>
-                Marketing</a>
+              <a href="productDescription.html" class="featured-products-description">Hezy Theme<br> <br> Marketing</a>
             </div>
             <div class="overlay"></div>
             <div class="row hover-buttons">
@@ -640,38 +662,129 @@
         </div>
       </div>
     </div>
-
-    <div class="row" style="background-color: white;">
-      <div class="col-3">
-        <div class="footer-padding">
-          <p class="year"></p>
-          <p>All Rights Reserved</p>
-          <p style="font-weight: bold;">CONTACT</p>
-          <p class="footer-margin">Headquarters:</p>
-          <p class="footer-margin">5600 Blvd. des Galeries, Bur 530</p>
-          <p class="footer-margin">Quebec, Quebec G2K 2H6</p> <br>
-          <a href="mailto:example@tutorialspark.com" class="footer-email">contact@osf-global.com </a> <br>
-          <br>
-          <a href="tel:+1(888) 548-4344" class="footer-number">+1(888) 548-4344</a>
-
+    </div>
+    <div class="footer">
+      <div class="row" style="background-color: white;">
+        <div class="col-lg-3 col-sm-12">
+          <div class="footer-padding">
+            <p class="year"></p>
+            <p>All Rights Reserved</p>
+            <p class="d-none d-md-block" style="font-weight: bold;">CONTACT</p>
+            <p class="footer-margin d-none d-md-block">Headquarters:</p>
+            <p class="footer-margin d-none d-md-block">5600 Blvd. des Galeries, Bur 530</p>
+            <p class="footer-margin d-none d-md-block">Quebec, Quebec G2K 2H6</p> <br>
+            <a href="mailto:example@tutorialspark.com" class="d-none d-md-block footer-email">contact@osf-global.com </a> <br> <br>
+            <a href="tel:+1(888) 548-4344" class="d-none d-md-block footer-number">+1(888) 548-4344</a>
+          </div>
         </div>
-      </div>
-      <div class="col-6">
-        <div class="row bigRow">
-          <div class="col padding">
-            <ul class="products-sales row">
-              <li class="col">
-                <p class="footer-title">CATEGORIEST</p>
+        <div class="col-lg-6 d-none d-md-block">
+          <div class="row bigRow">
+            <div class="col padding">
+              <ul class="products-sales row">
+                <li class="col-lg col-sm-12">
+                  <p class="footer-title">CATEGORIEST</p>
+                  <ul>
+                    <div class="row">
+                      <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
+                        <li><a href="404.html">Alcohol</a></li>
+                        <li><a href="404.html">Art</a></li>
+                        <li><a href="404.html">Books</a></li>
+                        <li><a href="404.html">Drink</a></li>
+                        <li><a href="404.html">Electronics</a></li>
+                      </div>
+                      <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
+                        <li><a href="404.html">Home</a></li>
+                        <li><a href="404.html">Jewelry</a></li>
+                        <li><a href="404.html">Kids & Baby</a></li>
+                        <li><a href="404.html">Men's Fashion</a></li>
+                        <li><a href="404.html">Mobile</a></li>
+                        <li><a href="404.html">Motorcycles</a></li>
+                        <li><a href="404.html">Movies</a></li>
+                        <li><a href="404.html">Music</a></li>
+                      </div>
+                      <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
+                        <li><a href="404.html">Sport</a></li>
+                        <li><a href="404.html">Toys</a></li>
+                        <li><a href="404.html">Travel</a></li>
+                        <li><a href="404.html">Women's Fashion</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <li class="col-lg-3 col-sm-12">
+                  <p class="footer-title">ABOUT</p>
+                  <ul class="dots linkColor footer-about">
+                    <li><a href="404.html">About us</a></li>
+                    <li><a href="404.html">Delivery</a></li>
+                    <li><a href="404.html">Testimonials</a></li>
+                    <li><a href="404.html">Contact</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- FOOTER ACCORDION (only on mobile) -->
+        <div style="margin-top: -80px" class="accordion sm-accordion d-md-none d-sm-block w-100" id="accordionEx" role="tablist" aria-multiselectable="true">
+  
+          <!-- Accordion card -->
+          <div class="card">
+        
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingOne1">
+              <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                aria-controls="collapseOne1">
+                <h5 class="mb-0">
+                  CONTACT <i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+        
+            <!-- Card body -->
+            <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
+              data-parent="#accordionEx">
+              <div class="card-body">
+                <div class="footer-padding">
+                  <p class="footer-margin">Headquarters:</p>
+                  <p class="footer-margin">5600 Blvd. des Galeries, Bur 530</p>
+                  <p class="footer-margin">Quebec, Quebec G2K 2H6</p> <br>
+                  <a href="mailto:example@tutorialspark.com" class="footer-email">contact@osf-global.com </a> <br> <br>
+                  <a href="tel:+1(888) 548-4344" class="footer-number">+1(888) 548-4344</a>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Accordion card -->
+        
+          <!-- Accordion card -->
+          <div class="card">
+        
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingTwo2">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                aria-expanded="false" aria-controls="collapseTwo2">
+                <h5 class="mb-0">
+                  CATEGORIEST<i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+        
+            <!-- Card body -->
+            <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+              data-parent="#accordionEx">
+              <div class="card-body">
                 <ul>
                   <div class="row">
-                    <div class="col dots linkColor footer-categoriest">
+                    <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
                       <li><a href="404.html">Alcohol</a></li>
                       <li><a href="404.html">Art</a></li>
                       <li><a href="404.html">Books</a></li>
                       <li><a href="404.html">Drink</a></li>
                       <li><a href="404.html">Electronics</a></li>
                     </div>
-                    <div class="col dots linkColor footer-categoriest">
+                    <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
                       <li><a href="404.html">Home</a></li>
                       <li><a href="404.html">Jewelry</a></li>
                       <li><a href="404.html">Kids & Baby</a></li>
@@ -681,7 +794,7 @@
                       <li><a href="404.html">Movies</a></li>
                       <li><a href="404.html">Music</a></li>
                     </div>
-                    <div class="col dots linkColor footer-categoriest">
+                    <div class="col-lg col-sm-12 dots linkColor footer-categoriest">
                       <li><a href="404.html">Sport</a></li>
                       <li><a href="404.html">Toys</a></li>
                       <li><a href="404.html">Travel</a></li>
@@ -689,37 +802,61 @@
                     </div>
                   </div>
                 </ul>
-              </li>
-              <li class="col-3">
-                <p class="footer-title">ABOUT</p>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Accordion card -->
+        
+          <!-- Accordion card -->
+          <div class="card">
+        
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingThree3">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                aria-expanded="false" aria-controls="collapseThree3">
+                <h5 class="mb-0">
+                  ABOUT <i class="fa fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+        
+            <!-- Card body -->
+            <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+              data-parent="#accordionEx">
+              <div class="card-body">
                 <ul class="dots linkColor footer-about">
                   <li><a href="404.html">About us</a></li>
                   <li><a href="404.html">Delivery</a></li>
                   <li><a href="404.html">Testimonials</a></li>
                   <li><a href="404.html">Contact</a></li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Accordion card -->
+        
+        </div>
+        <!-- END FOOTER ACCORDION -->
+  
+        <div class="col-lg-3 col-sm-12">
+          <div class="footer-icons">
+            <div class="footer-icons-padding">
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-icons-padding">
+              <a href="https://www.google.ro/"><i class="fa fa-google"></i></a>
+            </div>
+            <div class="footer-icons-padding">
+              <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-icons-padding">
+              <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="footer-icons">
-          <div class="footer-icons-padding">
-            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
-          </div>
-          <div class="footer-icons-padding">
-            <a href="https://www.google.ro/"><i class="fa fa-google"></i></a>
-          </div>
-          <div class="footer-icons-padding">
-            <a href="https://twitter.com/?lang=ro"><i class="fa fa-twitter"></i></a>
-          </div>
-          <div class="footer-icons-padding">
-            <a href="https://ro.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

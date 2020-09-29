@@ -302,8 +302,8 @@ margin-top: -10px;
   }
 
   .form-services {
-    width: 94%;
-    margin-left: 3%;
+    padding: 20px;
+    background-color: white;
   }
   
   .form-group {
@@ -866,6 +866,16 @@ margin-top: -10px;
     font-size: 8px; 
     text-align: center; 
 }
+
+
+.colorPopular {
+  color: white;
+}
+
+.light-slider-div {
+  padding: 40px;
+  margin-left: 200px;
+}
   
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -900,4 +910,51 @@ margin-top: -10px;
   .footer-padding {
     padding: 0;
   }
+
+  .breadcrumbs-align {
+    width: 100%;
+  }
+
+  .text-center {
+    width: 100%;
+    left: 0;
+  }
+
+  .colorPopular {
+    color: black;
+  }
+
+  .light-slider-div {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .lSSlideOuter {
+    padding-right: 0 !important;
+  }
+
+  .mt-20 {
+    margin-top: 20px
+  }
+
+  .backgroundItemsProductDescription {
+    background-color: transparent;
+  }
+
+  .form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form-services {
+    width: 100%;
+  }
+  .oops {
+    margin-top: 0;
+  }
+
+  /* .carousel-indicators .active {
+    background-color: black;
+  } */
+
 }
