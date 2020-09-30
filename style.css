@@ -919,6 +919,47 @@ margin-top: -10px;
 .fontContact {
   font-weight: bold;
 }
+
+#select-color {
+  width:33%;
+  border-radius:50px;
+}
+
+#select-number {
+  border-radius:50px; 
+  background-color:white
+}
+
+#description-second-col {
+  padding-left: 60px;
+}
+
+.acordion-mobile {
+  margin-top: -80px;
+}
+
+#product-extraInfo {
+  width: 501px;
+}
+
+#background-services {
+  background-color: #f1edea; 
+  width: 93%;
+}
+
+.width-hover-buttons {
+  width: 200px;
+  padding-left: 70px;
+}
+
+#color-load-more {
+  background-color: yellowgreen;
+}
+
+.icons-services {
+  text-align: center; 
+  margin-bottom: 0
+}
   
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -1003,4 +1044,12 @@ margin-top: -10px;
 
   .footer-mobile {
     margin-top: -80px
+  }
+
+  .mobile-background-descriptionProduct {
+    background-color: #f1edea;
+  }
+
+  .carousel-mobile {
+    text-align: center;
   }
